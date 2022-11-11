@@ -9,7 +9,7 @@
 /* --------------- Header-Navigation Area --------------------------------------------------------------------------*/
 
 header {
-  /*background-color: rgb(6, 40, 61);*/
+  /*None*/
 }
 
 nav {
@@ -22,9 +22,9 @@ nav {
 label.logo {
   /*selects label elements with class logo*/
   color: white;
-  font-size: 30px;
+  font-size: 35px;
   font-weight: bold;
-  padding-left: 50px;
+  padding: 0 50px;
   line-height: 80px;
   text-shadow: 2px 2px 4px #000000;
 }
@@ -48,7 +48,7 @@ nav ul li a {
   font-size: 17px;
   padding: 7px 13px;
   border-radius: 3px;
-  text-shadow: 2px 2px 4px #000000; /*vrt background-color*/
+  text-shadow: 2px 2px 4px #000000;
 }
 
 .navbarLinks a:hover {
@@ -73,6 +73,11 @@ nav ul li a {
 
 /*The Navbar*/
 @media only screen and (max-width: 768px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+
   nav ul li a {
     font-size: 16px;
   }
@@ -97,7 +102,7 @@ nav ul li a {
     /*Normal flow stuff*/
     display: block;
     margin: 50px 0;
-    line-height: 30px; /*adjust!*/
+    line-height: 30px;
   }
 
   nav ul li a {
@@ -126,13 +131,6 @@ nav ul li a {
     /*probably unnecessary, noted above*/
     display: none;
   }
-
-  label.logo {
-    font-size: 35px;
-    padding: 0 50px;
-  }
-
-  /*section---------------------------------------------------------------*/
   .flex-container {
     display: flex;
   }
