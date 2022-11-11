@@ -39,7 +39,7 @@ nav ul li {
   /*selects li inside ul inside nav*/
   display: inline-block;
   line-height: 80px;
-  margin: 0 5 px;
+  margin: 0px 5px;
 }
 
 nav ul li a {
@@ -131,7 +131,8 @@ nav ul li a {
     /*probably unnecessary, noted above*/
     display: none;
   }
-  .flex-container {
+
+  /*.flex-container {
     display: flex;
-  }
+  }*/
 }
