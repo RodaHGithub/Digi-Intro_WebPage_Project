@@ -6,6 +6,15 @@
   list-style: none; /*  ?  */
 }
 
+html {
+  height: 100%; /*to make footer stick to bottom of the page*/
+}
+
+body {
+  min-height: 100%; /*to make footer stick to bottom of the page*/
+  display: flex;
+  flex-direction: column;
+}
 /* --------------- Header-Navigation Area --------------------------------------------------------------------------*/
 
 header {
@@ -69,9 +78,124 @@ nav ul li a {
   display: none;
 }
 
+/*************  START FOOTER    ************/
+footer {
+  background-color: rgb(6, 40, 61);
+  margin-top: auto; /*to make footer stick to bottom of the page*/
+}
+.footerContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 3rem 2rem;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footerInfo {
+  width: 16rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.footerTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 25px; /* OG: 1.125rem;*/
+  line-height: 1.75rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.footerTagline {
+  color: antiquewhite;
+  font-size: 16px; /* OG: 0.875rem;*/
+  line-height: 1.25rem;
+}
+
+.footerSectionWrapper {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1rem; /*gap between title and list links  - OG: 2rem*/
+  text-align: center;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.footerCategory {
+  color: aliceblue;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  /* margin-bottom: 0.75rem; */
+  font-size: 15px; /*added*/
+}
+
+.footerList {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.25rem;
+  list-style-type: none; /*removes default bulleted list styles*/
+  background-color: rgb(6, 40, 61); /*fixed the weird color thing*/
+}
+
+.footerLink {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.footerLink:hover {
+  color: aqua;
+}
+
+.footerBottom {
+  background-color: rgb(6, 40, 61);
+}
+
+.footerBottomContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  row-gap: 1rem;
+  padding: 1.25rem 2rem;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footerCopyright {
+  color: aliceblue;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  text-align: center;
+}
+
+.footerLogos {
+  display: flex;
+  justify-content: center;
+  column-gap: 1rem;
+}
+
+.footerLogos a img {
+  /*necessary?*/
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+/************* END FOOTER ****************/
+
 /* --------------------- For Mobile ---------------------------------------------------------------------------------*/
 
-/*The Navbar*/
+/***************START  NAVBAR ***********************/
 @media only screen and (max-width: 768px) {
   label.logo {
     font-size: 30px;
@@ -117,11 +241,13 @@ nav ul li a {
     /*check mark*/
     left: 0;
   }
+  /***************END  NAVBAR ***********************/
 }
 
 /* --------------------- For Desktop -------------------------------------------------------------------------------*/
+/**/
 @media only screen and (min-width: 768px) {
-  /*---------------------------------------The navbar---------------------------------------------*/
+  /*******   START NAVBAR *********/
   .checkbtn {
     /*nav icon*/
     display: none;
@@ -132,7 +258,44 @@ nav ul li a {
     display: none;
   }
 
-  /*.flex-container {
-    display: flex;
-  }*/
+  /********** ENF NAVBAR   ****************/
+
+  /************ START FOOTER***************/
+  .footerContainer {
+    flex-direction: row;
+  }
+
+  .footerInfo {
+    margin-left: 0; /*originally 0*, shifts the whole container/
+    margin-top: 15px; /*added*/
+    margin-right: 0;
+    text-align: left;
+  }
+
+  .footerTitle {
+    justify-content: flex-start;
+    margin-left: 15px;
+  }
+
+  .footerTagline {
+    margin-left: 15px; /*added*/
+  }
+
+  .footerCategory {
+    margin-top: 15px; /*added*/
+  }
+
+  .footerSectionWrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    margin-left: 50px; /*added*/
+  }
+
+  .footerBottomContainer {
+    flex-direction: row;
+    justify-content: space-between; /*separates them to the sides*/
+  }
+
+  /************ END FOOTER*****************/
 }
