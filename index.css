@@ -306,7 +306,7 @@ h1.welcome {
 
 .courses-grid-container .courses-grid-item img {
   max-width: 100%;
-  height: auto;
+  height: 90%; /*auto*/
   justify-items: center;
 }
 
@@ -530,6 +530,13 @@ h1.welcome {
     grid-column-gap: 20px;
     grid-column-gap: 20px;
   }
+
+  .courses-grid-container .courses-grid-item img {
+    max-width: 100%;
+    height: auto;
+    justify-items: center;
+  }
+
   /********************END GRID MAIN *******************************/
 
   /********************START SPONSORS MAIN  *******************************/
