@@ -287,6 +287,110 @@ footer {
 }
 /*************** END WELCOME ********************/
 
+/******************  START COACHING  ***************/
+.coach-flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100vw;
+  margin-bottom: 40px;
+}
+
+.coach-flex-item {
+  text-align: center;
+  background-color: rgb(217, 238, 225);
+  border-radius: 12px;
+  width: 85vw;
+  justify-self: center;
+}
+
+.coach-flex-item-1 {
+  background-color: rgb(217, 238, 225);
+  padding-bottom: 50px;
+}
+.coach-flex-item-2 {
+  background-color: rgb(217, 238, 225);
+  padding-bottom: 50px;
+}
+.coach-flex-item-3 {
+  background-color: rgb(217, 238, 225);
+  padding-bottom: 50px;
+}
+
+h2.h2-coach {
+  font-size: 20px;
+  padding-bottom: 15px;
+  padding-top: 40px;
+}
+
+h3.h3-coach {
+  font-size: 14px;
+  padding-bottom: 15px;
+}
+
+.price {
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+ul {
+  padding-left: 20px;
+  font-size: 13px;
+  text-align: left;
+  padding-left: 110px;
+  padding-bottom: 25px;
+}
+
+ul.p-coach-s {
+  padding-bottom: 56px;
+}
+
+ul.p-coach-t {
+  padding-bottom: 56px;
+}
+
+li.li-coach {
+  list-style-type: circle;
+  padding-bottom: 15px;
+  line-height: 15px;
+}
+
+/*   TAGS   
+.coach-flex-container
+.coach-flex-item .coach-flex-item-1
+.coach-flex-item .coach-flex-item-1 .h2-coach
+.coach-flex-item .coach-flex-item-1 .h3-coach
+.coach-flex-item .coach-flex-item-1 .p-coach   (ul)
+.coach-flex-item .coach-flex-item-1 .price     (p)
+.coach-flex-item .coach-flex-item-1 .button-coach (button)
+*/
+
+/*buttons*/
+.coach-flex-container .coach-flex-item .button-coach button {
+  background-color: rgb(4, 170, 109);
+  border-color: rgb(4, 170, 109);
+  border-radius: 5px;
+  color: white;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.coach-flex-container .coach-flex-item .button-coach button a {
+  color: white;
+}
+
+.coach-flex-container .coach-flex-item .button-coach button:hover {
+  background-color: rgb(29, 129, 92);
+  border-color: rgb(29, 129, 92);
+  border-radius: 5px;
+  color: white;
+}
+/******************  END COACHING  ***************/
+
 /* RWD */
 
 /* ----------------------------------------------------------------------------------------------------
@@ -442,10 +546,10 @@ footer {
     padding-bottom: 20px;
   }
 
-  .welc-grid-container .welc-grid-item p {
+  /*.welc-grid-container .welc-grid-item p {
     padding-bottom: 69px;
     width: 75%;
-  }
+  }*/
   .welc-grid-item-2 {
     /*align-self: center;*/
     /*justify-self: center;*/
@@ -453,5 +557,74 @@ footer {
     margin-right: 40px;
     padding-top: 60px;
   }
+
   /******************END WELCOME *********************/
+
+  /******************  START COACHING  ***************/
+  .coach-flex-container {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+    padding-bottom: 60px;
+    width: 100vw;
+  }
+
+  .coach-flex-item {
+    padding-bottom: 60px;
+    width: 300px;
+    border-radius: 12px;
+  }
+
+  ul {
+    padding-left: 34px;
+  }
+
+  /*
+h2.h2-coach {
+  font-size: 20px;
+  padding-bottom: 15px;
+  padding-top: 40px;
+}
+
+h3.h3-coach {
+  font-size: 14px;
+  padding-bottom: 15px;
+}
+
+.price {
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+ul {
+  padding-left: 20px;
+  font-size: 13px;
+  text-align: left;
+  padding-left: 110px;
+  padding-bottom: 25px;
+}
+
+ul.p-coach-s {
+  padding-bottom: 56px;
+}
+
+ul.p-coach-c {
+}
+
+ul.p-coach-t {
+  padding-bottom: 56px;
+}
+
+li {
+  list-style-type: circle;
+  padding-bottom: 15px;
+  line-height: 15px;
+}
+
+  */
+
+  /*.coach-flex-item .coach-flex-item-1 {
+    
+  }*/
+  /******************  END COACHING  ***************/
 }
