@@ -201,6 +201,87 @@ footer {
 
 /************* END FOOTER ****************/
 
+/*************** START WELCOME ******************/
+.welc-grid-container {
+  display: grid;
+  grid-template-columns: 1 fr;
+  grid-auto-rows: minmax(300px, auto);
+  /*grid-column-gap: __;*/
+  grid-row-gap: 0px;
+  background-color: rgb(243, 236, 234);
+  color: rgb(40, 42, 53);
+  justify-content: center;
+  justify-items: center;
+  margin-bottom: 60px;
+  /*align-content: center;*/
+  /*  justify-items: center;*/
+}
+
+.welc-grid-container .welc-grid-item img {
+  max-width: 100%;
+  height: 90%; /*auto*/
+  justify-items: center;
+  padding-top: 60px;
+}
+
+/*Aligning Images*/
+.welc-grid-item-1 {
+  /*align-self: center;*/
+  /*justify-self: center;*/
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+/*Aligning Text*/
+
+.welc-grid-container .welc-grid-item h4 {
+  padding-bottom: 20px;
+  color: rgb(98, 98, 122);
+  font-size: 13px;
+  font-weight: 100;
+}
+
+.welc-grid-container .welc-grid-item h1 {
+  font-size: 30px;
+}
+
+.welc-grid-container .welc-grid-item p.welc-p1 {
+  padding-bottom: 35px;
+  padding-top: 35px;
+  width: 75%;
+}
+
+.welc-grid-container .welc-grid-item p.welc-p2 {
+  padding-bottom: 50px;
+  width: 75%;
+}
+.welc-grid-item-2 {
+  /*align-self: center;*/
+  /*justify-self: center;*/
+  margin-left: 54px;
+  margin-right: 40px;
+  justify-self: center;
+}
+
+.welc-grid-container .welc-grid-item .button-front button {
+  background-color: rgb(11, 31, 51);
+  border-color: rgb(11, 31, 51);
+  border-radius: 5px;
+  color: white;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.welc-grid-container .welc-grid-item .button-front button:hover {
+  background-color: rgb(4, 170, 109);
+  border-color: rgb(4, 170, 109);
+  border-radius: 5px;
+  color: white;
+}
+/*************** END WELCOME ********************/
+
 /* RWD */
 
 /* ----------------------------------------------------------------------------------------------------
@@ -320,4 +401,52 @@ footer {
   }
 
   /************ END FOOTER*****************/
+
+  /*****************START WELCOME **********************/
+  .welc-grid-container {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 130px;
+  }
+
+  .welc-grid-container .welc-grid-item img {
+    max-width: 100%;
+    height: auto;
+    justify-items: center;
+    padding-bottom: 60px;
+  }
+
+  /*Aligning Images*/
+  .welc-grid-item-1 {
+    /*align-self: center;*/
+    /*justify-self: center;*/
+    margin-left: 40px;
+    margin-right: 120px;
+    grid-area: 1 / 2 / span 1 / span 1; /*change order*/
+  }
+  /*Aligning Text*/
+
+  .welc-grid-container .welc-grid-item h4 {
+    padding-bottom: 20px;
+    color: rgb(98, 98, 122);
+    font-size: 13px;
+    font-weight: 100;
+  }
+
+  .welc-grid-container .welc-grid-item h2 {
+    padding-bottom: 20px;
+  }
+
+  .welc-grid-container .welc-grid-item p {
+    padding-bottom: 69px;
+    width: 75%;
+  }
+  .welc-grid-item-2 {
+    /*align-self: center;*/
+    /*justify-self: center;*/
+    margin-left: 120px;
+    margin-right: 40px;
+    padding-top: 60px;
+  }
+  /******************END WELCOME *********************/
 }
