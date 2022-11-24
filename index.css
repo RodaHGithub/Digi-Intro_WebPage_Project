@@ -248,7 +248,7 @@ h1.welcome {
   /*grid-auto-rows: minmax(450px, auto); /*vertical size on screen*/
   justify-content: center;
   align-content: start;
-  height: 650px; /*or use vh (e.g. 75 vh), vrt auto rows min-max above*/
+  height: 680px; /*or use vh (e.g. 75 vh), vrt auto rows min-max above*/
   padding-top: 75px;
   color: rgb(40, 42, 53);
 }
