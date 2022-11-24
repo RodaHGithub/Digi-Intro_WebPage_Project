@@ -22,7 +22,7 @@ header {
 }
 
 nav {
-  background-color: rgb(37, 109, 133);
+  background-color: rgb(255, 255, 255);
   height: 80px;
   width: 100%;
 }
@@ -30,12 +30,12 @@ nav {
 /*Logo*/
 label.logo {
   /*selects label elements with class logo*/
-  color: white;
-  font-size: 35px;
+  color: rgb(4, 170, 109);
+  font-size: 22px; /*og:35px*/
   font-weight: bold;
   padding: 0 50px;
   line-height: 80px;
-  text-shadow: 2px 2px 4px #000000;
+  /*text-shadow: 2px 2px 4px #000000;*/
 }
 
 nav ul {
@@ -53,21 +53,21 @@ nav ul li {
 
 nav ul li a {
   /*selects al inside li inside ul inside nav*/
-  color: white;
+  color: rgb(40, 42, 53);
   font-size: 17px;
   padding: 7px 13px;
   border-radius: 3px;
-  text-shadow: 2px 2px 4px #000000;
+  /*text-shadow: 2px 2px 4px #000000;*/
 }
 
 .navbarLinks a:hover {
-  color: rgb(6, 40, 61);
+  color: rgb(4, 170, 109);
 }
 
 .checkbtn {
   /*nav icon*/
   font-size: 30px;
-  color: white;
+  color: rgb(6, 40, 61);
   float: right;
   line-height: 80px;
   margin-right: 40px;
@@ -80,7 +80,7 @@ nav ul li a {
 
 /*************  START FOOTER    ************/
 footer {
-  background-color: rgb(6, 40, 61);
+  background-color: rgb(40, 42, 53);
   margin-top: auto; /*to make footer stick to bottom of the page*/
 }
 .footerContainer {
@@ -115,7 +115,7 @@ footer {
 }
 
 .footerTagline {
-  color: antiquewhite;
+  color: rgb(37, 199, 140);
   font-size: 16px; /* OG: 0.875rem;*/
   line-height: 1.25rem;
 }
@@ -145,7 +145,7 @@ footer {
   flex-direction: column;
   row-gap: 0.25rem;
   list-style-type: none; /*removes default bulleted list styles*/
-  background-color: rgb(6, 40, 61); /*fixed the weird color thing*/
+  background-color: rgb(40, 42, 53); /*fixed the weird color thing*/
 }
 
 .footerLink {
@@ -154,11 +154,19 @@ footer {
 }
 
 .footerLink:hover {
-  color: aqua;
+  color: rgb(4, 170, 109);
+}
+
+.about {
+  padding-top: 70px;
+}
+
+.contact {
+  padding-top: 70px;
 }
 
 .footerBottom {
-  background-color: rgb(6, 40, 61);
+  background-color: rgb(40, 42, 53);
 }
 
 .footerBottomContainer {
@@ -390,6 +398,37 @@ h1.welcome {
 /********************END GRID MAIN *******************************/
 
 /********************START SPONSORS MAIN  *******************************/
+.spons-grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  background-color: rgb(217, 238, 225);
+  color: rgb(40, 42, 53);
+  grid-row-gap: 5px;
+  padding-top: 92px;
+  padding-bottom: 92px;
+
+  /*
+  display: grid;
+  grid-template-columns: 1 fr;
+  grid-auto-rows: minmax(300px, auto);
+  /*grid-column-gap: __;*/
+
+  /*align-content: center;*/
+  /*  justify-items: center;*/
+}
+
+.spons-grid-item {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.spons-grid-item-1 h4 {
+  font-size: 20px;
+  padding-bottom: 15px;
+}
 /********************END SPONSORS MAIN *******************************/
 
 /* RWD */
@@ -401,7 +440,7 @@ h1.welcome {
 /***************START  NAVBAR ***********************/
 @media only screen and (max-width: 768px) {
   label.logo {
-    font-size: 30px;
+    font-size: 25px; /*orig:30px^/
     padding-left: 50px;
   }
 
@@ -419,7 +458,7 @@ h1.welcome {
     position: fixed;
     width: 100%;
     height: 100vh;
-    background: rgb(6, 40, 61);
+    background: rgb(40, 42, 53);
     top: 80px;
     left: -100%;
     text-align: center;
@@ -434,11 +473,12 @@ h1.welcome {
 
   nav ul li a {
     font-size: 20px;
+    color: aliceblue;
   }
 
   .navbarLinks a:hover {
     background: none;
-    color: rgb(37, 109, 133);
+    color: rgb(4, 170, 109);
   }
   #check:checked ~ ul {
     /*check mark*/
@@ -496,6 +536,14 @@ h1.welcome {
     margin-left: 50px; /*added*/
   }
 
+  .about {
+    padding-top: 0px;
+  }
+
+  .contact {
+    padding-top: 0px;
+  }
+
   .footerBottomContainer {
     flex-direction: row;
     justify-content: space-between; /*separates them to the sides*/
@@ -528,7 +576,8 @@ h1.welcome {
   .courses-grid-container {
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 20px;
-    grid-column-gap: 20px;
+    grid-row-gap: 130px;
+    margin-top: 130px;
   }
 
   .courses-grid-container .courses-grid-item img {
@@ -537,8 +586,119 @@ h1.welcome {
     justify-items: center;
   }
 
+  /*Aligning Images*/
+  .courses-grid-item-1 {
+    /*align-self: center;*/
+    /*justify-self: center;*/
+    margin-left: 80px;
+    margin-right: 40px;
+  }
+
+  .courses-grid-item-3 {
+    /*align-self: center;*/
+    /*justify-self: center;*/
+    margin-left: 40px;
+    margin-right: 80px;
+    grid-area: 2 / 2 / span 1 / span 1; /*change order*/
+  }
+
+  .courses-grid-item-5 {
+    /*align-self: center;*/
+    /*justify-self: center;*/
+    margin-left: 80px;
+    margin-right: 40px;
+  }
+
+  /*Aligning Text*/
+
+  .courses-grid-container .courses-grid-item h4 {
+    padding-bottom: 20px;
+    color: rgb(98, 98, 122);
+    font-size: 13px;
+    font-weight: 100;
+  }
+
+  .courses-grid-container .courses-grid-item h2 {
+    padding-bottom: 20px;
+  }
+
+  .courses-grid-container .courses-grid-item p {
+    padding-bottom: 69px;
+    width: 75%;
+  }
+  .courses-grid-item-2 {
+    /*align-self: center;*/
+    /*justify-self: center;*/
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .courses-grid-item-4 {
+    /*align-self: center;*/
+    /*justify-self: center;*/
+    margin-left: 80px;
+    margin-right: 40px;
+  }
+
+  .courses-grid-item-6 {
+    /*align-self: center;*/
+    /*justify-self: center;*/
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
   /********************END GRID MAIN *******************************/
 
   /********************START SPONSORS MAIN  *******************************/
+  .spons-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: minmax(60px, auto);
+    grid-row-gap: 0px;
+    grid-column-gap: 50px;
+  }
+
+  .spons-grid-item-1 {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+
+  .spons-grid-item-1 h4 {
+    font-size: 20px;
+    padding-bottom: 35px;
+  }
+
+  .spons-grid-item-2 {
+    justify-self: end;
+  }
+
+  .spons-grid-item-3 {
+    justify-self: end;
+    padding-right: 50px;
+  }
+
+  .spons-grid-item-4 {
+    justify-self: left;
+    padding-left: 60px;
+  }
+  .spons-grid-item-5 {
+    justify-self: left;
+  }
+  .spons-grid-item-6 {
+    justify-self: right;
+  }
+
+  .spons-grid-item-7 {
+    justify-self: right;
+    padding-right: 30px;
+  }
+
+  .spons-grid-item-8 {
+    justify-self: left;
+    padding-left: 80px;
+  }
+  .spons-grid-item-9 {
+    justify-self: left;
+  }
   /********************END SPONSORS MAIN *******************************/
 }
