@@ -289,6 +289,15 @@ h1.welcome {
 /********************END "WHY" MAIN  *******************************/
 
 /********************START GRID MAIN  *******************************/
+.courses-grid-container {
+  display: grid;
+  grid-template-columns: 1 fr;
+}
+
+.courses-grid-container .courses-grid-item img {
+  max-width: 100%;
+  height: auto;
+}
 /********************END GRID MAIN *******************************/
 
 /********************START SPONSORS MAIN  *******************************/
@@ -427,6 +436,9 @@ h1.welcome {
   /********************END WHY MAIN  *******************************/
 
   /********************START GRID MAIN  *******************************/
+  .courses-grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
   /********************END GRID MAIN *******************************/
 
   /********************START SPONSORS MAIN  *******************************/
