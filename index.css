@@ -294,12 +294,12 @@ h1.welcome {
   grid-template-columns: 1 fr;
   grid-auto-rows: minmax(300px, auto);
   /*grid-column-gap: __;*/
-  grid-row-gap: 20px;
+  grid-row-gap: 0px;
   background-color: (255, 255, 255);
   color: rgb(40, 42, 53);
+  justify-content: center;
   margin-top: 60px;
   margin-bottom: 60px;
-  justify-content: center;
   /*align-content: center;*/
   /*  justify-items: center;*/
 }
@@ -318,7 +318,7 @@ h1.welcome {
   margin-right: 40px;
 }
 
-.courses-grid-item-4 {
+.courses-grid-item-3 {
   /*align-self: center;*/
   /*justify-self: center;*/
   margin-left: 40px;
@@ -333,30 +333,46 @@ h1.welcome {
 }
 
 /*Aligning Text*/
+
+.courses-grid-container .courses-grid-item h4 {
+  padding-bottom: 20px;
+  color: rgb(98, 98, 122);
+  font-size: 13px;
+  font-weight: 100;
+}
+
+.courses-grid-container .courses-grid-item h2 {
+  padding-bottom: 20px;
+}
+
+.courses-grid-container .courses-grid-item p {
+  padding-bottom: 35px;
+  width: 75%;
+}
 .courses-grid-item-2 {
   /*align-self: center;*/
   /*justify-self: center;*/
-  /*margin-left: 40px;*/
-  /*margin-right: 40px;*/
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
-.courses-grid-item-3 {
+.courses-grid-item-4 {
   /*align-self: center;*/
   /*justify-self: center;*/
-  /*margin-left: 40px;*/
-  /*margin-right: 40px;*/
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .courses-grid-item-6 {
   /*align-self: center;*/
   /*justify-self: center;*/
-  /*margin-left: 40px;*/
-  /*margin-right: 40px;*/
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .courses-grid-container .courses-grid-item .button-front button {
-  background-color: green;
-  border-color: green;
+  background-color: rgb(4, 170, 109);
+  border-color: rgb(4, 170, 109);
   border-radius: 5px;
   color: white;
   padding-left: 15px;
@@ -366,8 +382,8 @@ h1.welcome {
 }
 
 .courses-grid-container .courses-grid-item .button-front button:hover {
-  background-color: rgb(24, 63, 24);
-  border-color: rgb(24, 63, 24);
+  background-color: rgb(29, 129, 92);
+  border-color: rgb(29, 129, 92);
   border-radius: 5px;
   color: white;
 }
