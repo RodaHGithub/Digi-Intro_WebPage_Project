@@ -200,7 +200,7 @@ footer {
   color: white;
   background-color: rgb(40, 42, 53);
   grid-template-columns: 1fr;
-  grid-auto-rows: minmax(450px, auto);
+  grid-auto-rows: minmax(450px, auto); /*vertical size on screen*/
   justify-content: center;
   align-content: center;
 }
@@ -240,13 +240,65 @@ h1.welcome {
 
 /********************END WELCOME MAIN *******************************/
 
+/********************START "WHY" MAIN  *******************************/
+.why-grid-container {
+  display: grid;
+  background-color: rgb(217, 238, 225);
+  grid-template-columns: 1fr;
+  /*grid-auto-rows: minmax(450px, auto); /*vertical size on screen*/
+  justify-content: center;
+  align-content: start;
+  height: 650px; /*or use vh (e.g. 75 vh), vrt auto rows min-max above*/
+  padding-top: 75px;
+  color: rgb(40, 42, 53);
+}
+
+.why-grid-container .why-grid-item-1 {
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+  padding-bottom: 75px;
+}
+
+.why-grid-container .why-grid-item-2 {
+  /*align-self: center;*/
+  /*justify-self: center;*/
+  text-align: center;
+}
+
+.why-grid-container .why-grid-item-2 .why-flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex: 0 0 auto;
+}
+
+.why-grid-container .why-grid-item-2 .why-flex-container .why-flex-item {
+  max-width: 250px;
+}
+
+.why-grid-container .why-grid-item-2 .why-flex-container .why-flex-item h3 {
+  padding-bottom: 20px;
+}
+
+.why-grid-container .why-grid-item-2 .why-flex-container .why-flex-item p {
+  padding-bottom: 20px;
+}
+
+/********************END "WHY" MAIN  *******************************/
+
 /********************START GRID MAIN  *******************************/
 /********************END GRID MAIN *******************************/
 
 /********************START SPONSORS MAIN  *******************************/
 /********************END SPONSORS MAIN *******************************/
 
-/* --------------------- For Mobile ---------------------------------------------------------------------------------*/
+/* RWD */
+
+/* ----------------------------------------------------------------------------------------------------
+        /////////////////// For MOBILE (Extra) ///////////////////
+------------------------------------------------------------------------------------------------------*/
 
 /***************START  NAVBAR ***********************/
 @media only screen and (max-width: 768px) {
@@ -297,8 +349,9 @@ h1.welcome {
   /***************END  NAVBAR ***********************/
 }
 
-/* --------------------- For Desktop -------------------------------------------------------------------------------*/
-/**/
+/* ----------------------------------------------------------------------------------------------------
+        /////////////////// For DESKTOP ///////////////////
+------------------------------------------------------------------------------------------------------*/
 @media only screen and (min-width: 768px) {
   /*******   START NAVBAR *********/
   .checkbtn {
@@ -358,9 +411,20 @@ h1.welcome {
     color: white;
     background-color: rgb(40, 42, 53);
     grid-template-columns: 1fr;
-    grid-auto-rows: minmax(500px, auto);
+    grid-auto-rows: minmax(500px, auto); /*check this size later*/
   }
   /********************END WELCOME MAIN *******************************/
+
+  /********************START WHY MAIN  *******************************/
+
+  .why-grid-container {
+    height: 400px; /*check this size later*/
+  }
+  .why-grid-container .why-grid-item-2 .why-flex-container {
+    flex-direction: row;
+    justify-content: space-around; /*doesn't work*/
+  }
+  /********************END WHY MAIN  *******************************/
 
   /********************START GRID MAIN  *******************************/
   /********************END GRID MAIN *******************************/
