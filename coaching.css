@@ -213,6 +213,7 @@ footer {
   justify-content: center;
   justify-items: center;
   margin-bottom: 60px;
+  padding-bottom: 60px;
   /*align-content: center;*/
   /*  justify-items: center;*/
 }
@@ -272,6 +273,10 @@ footer {
   padding-right: 15px;
   padding-top: 5px;
   padding-bottom: 5px;
+}
+
+.welc-grid-container .welc-grid-item .button-front button a {
+  color: white;
 }
 
 .welc-grid-container .welc-grid-item .button-front button:hover {
