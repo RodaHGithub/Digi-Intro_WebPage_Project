@@ -193,6 +193,57 @@ footer {
 
 /************* END FOOTER ****************/
 
+/********************START WELCOME MAIN  *******************************/
+
+.welc-grid-container {
+  display: grid;
+  color: white;
+  background-color: rgb(40, 42, 53);
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(450px, auto);
+  justify-content: center;
+  align-content: center;
+}
+
+.welc-grid-container .welc-grid-item-1 {
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+}
+
+.welc-grid-container .welc-grid-item-1 {
+  margin-right: 0px; /*does nothing*/
+  padding-left: 20px;
+}
+
+.welc-grid-container .welc-grid-item-1 .welcome {
+  margin-bottom: 20px;
+}
+
+h1.welcome {
+  font-size: 30px;
+}
+.welc-grid-container .welc-grid-item-1 button {
+  cursor: pointer;
+  padding-right: 3px;
+  padding-left: 3px;
+  background: rgb(4, 170, 109);
+  color: white;
+  border-color: rgb(4, 170, 109);
+}
+
+.welc-grid-container .welc-grid-item-1 button:hover {
+  background: rgb(29, 129, 92);
+}
+
+/********************END WELCOME MAIN *******************************/
+
+/********************START GRID MAIN  *******************************/
+/********************END GRID MAIN *******************************/
+
+/********************START SPONSORS MAIN  *******************************/
+/********************END SPONSORS MAIN *******************************/
+
 /* --------------------- For Mobile ---------------------------------------------------------------------------------*/
 
 /***************START  NAVBAR ***********************/
@@ -298,4 +349,13 @@ footer {
   }
 
   /************ END FOOTER*****************/
+
+  /********************START WELCOME MAIN  *******************************/
+  /********************END WELCOME MAIN *******************************/
+
+  /********************START GRID MAIN  *******************************/
+  /********************END GRID MAIN *******************************/
+
+  /********************START SPONSORS MAIN  *******************************/
+  /********************END SPONSORS MAIN *******************************/
 }
