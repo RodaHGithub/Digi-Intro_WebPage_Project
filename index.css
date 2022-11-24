@@ -292,11 +292,84 @@ h1.welcome {
 .courses-grid-container {
   display: grid;
   grid-template-columns: 1 fr;
+  grid-auto-rows: minmax(300px, auto);
+  /*grid-column-gap: __;*/
+  grid-row-gap: 20px;
+  background-color: (255, 255, 255);
+  color: rgb(40, 42, 53);
+  margin-top: 60px;
+  margin-bottom: 60px;
+  justify-content: center;
+  /*align-content: center;*/
+  /*  justify-items: center;*/
 }
 
 .courses-grid-container .courses-grid-item img {
   max-width: 100%;
   height: auto;
+  justify-items: center;
+}
+
+/*Aligning Images*/
+.courses-grid-item-1 {
+  /*align-self: center;*/
+  /*justify-self: center;*/
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.courses-grid-item-4 {
+  /*align-self: center;*/
+  /*justify-self: center;*/
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.courses-grid-item-5 {
+  /*align-self: center;*/
+  /*justify-self: center;*/
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+/*Aligning Text*/
+.courses-grid-item-2 {
+  /*align-self: center;*/
+  /*justify-self: center;*/
+  /*margin-left: 40px;*/
+  /*margin-right: 40px;*/
+}
+
+.courses-grid-item-3 {
+  /*align-self: center;*/
+  /*justify-self: center;*/
+  /*margin-left: 40px;*/
+  /*margin-right: 40px;*/
+}
+
+.courses-grid-item-6 {
+  /*align-self: center;*/
+  /*justify-self: center;*/
+  /*margin-left: 40px;*/
+  /*margin-right: 40px;*/
+}
+
+.courses-grid-container .courses-grid-item .button-front button {
+  background-color: green;
+  border-color: green;
+  border-radius: 5px;
+  color: white;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.courses-grid-container .courses-grid-item .button-front button:hover {
+  background-color: rgb(24, 63, 24);
+  border-color: rgb(24, 63, 24);
+  border-radius: 5px;
+  color: white;
 }
 /********************END GRID MAIN *******************************/
 
@@ -438,6 +511,8 @@ h1.welcome {
   /********************START GRID MAIN  *******************************/
   .courses-grid-container {
     grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-column-gap: 20px;
   }
   /********************END GRID MAIN *******************************/
 
