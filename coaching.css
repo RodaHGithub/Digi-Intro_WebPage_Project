@@ -335,7 +335,7 @@ h3.h3-coach {
   padding-top: 15px;
 }
 
-ul {
+ul.ul-coach {
   padding-left: 20px;
   font-size: 13px;
   text-align: left;
@@ -356,16 +356,6 @@ li.li-coach {
   padding-bottom: 15px;
   line-height: 15px;
 }
-
-/*   TAGS   
-.coach-flex-container
-.coach-flex-item .coach-flex-item-1
-.coach-flex-item .coach-flex-item-1 .h2-coach
-.coach-flex-item .coach-flex-item-1 .h3-coach
-.coach-flex-item .coach-flex-item-1 .p-coach   (ul)
-.coach-flex-item .coach-flex-item-1 .price     (p)
-.coach-flex-item .coach-flex-item-1 .button-coach (button)
-*/
 
 /*buttons*/
 .coach-flex-container .coach-flex-item .button-coach button {
@@ -390,6 +380,86 @@ li.li-coach {
   color: white;
 }
 /******************  END COACHING  ***************/
+
+/***************** START HOW WORKS ****************/
+
+.why-grid-container {
+  display: grid;
+  background-color: rgb(255, 246, 236);
+  grid-template-columns: 1fr;
+  /*grid-auto-rows: minmax(450px, auto); /*vertical size on screen*/
+  justify-content: center;
+  align-content: start;
+  height: 700px; /*or use vh (e.g. 75 vh), vrt auto rows min-max above*/
+  padding-top: 75px;
+  padding-bottom: 75px;
+  color: rgb(40, 42, 53);
+}
+
+.why-grid-container .why-grid-item-1 {
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+  padding-bottom: 75px;
+}
+
+.why-grid-container .why-grid-item-2 {
+  /*align-self: center;*/
+  /*justify-self: center;*/
+  text-align: center;
+}
+
+.why-grid-container .why-grid-item-2 .why-flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex: 0 0 auto;
+}
+
+.why-grid-container .why-grid-item-2 .why-flex-container .why-flex-item {
+  max-width: 250px;
+}
+
+.why-grid-container .why-grid-item-2 .why-flex-container .why-flex-item h3 {
+  padding-bottom: 20px;
+}
+
+.why-grid-container .why-grid-item-2 .why-flex-container .why-flex-item p {
+  padding-bottom: 20px;
+}
+
+.why-grid-container .why-grid-item-3 {
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+  padding-bottom: 75px;
+  padding-top: 75px;
+}
+
+.why-grid-container .why-grid-item-3 .button-end button {
+  background-color: rgb(11, 31, 51);
+  border-color: rgb(11, 31, 51);
+  border-radius: 5px;
+  color: white;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.why-grid-container .why-grid-item-3 .button-end button a {
+  color: white;
+}
+
+.why-grid-container .why-grid-item-3 .button-end button:hover {
+  background-color: rgb(4, 170, 109);
+  border-color: rgb(4, 170, 109);
+  border-radius: 5px;
+  color: white;
+}
+
+/***************** END HOW WORKS ****************/
 
 /* RWD */
 
@@ -435,7 +505,6 @@ li.li-coach {
     font-size: 20px;
     color: aliceblue;
   }
-
   .navbarLinks a:hover {
     background: none;
     color: rgb(4, 170, 109);
@@ -575,7 +644,7 @@ li.li-coach {
     border-radius: 12px;
   }
 
-  ul {
+  ul.ul-coach {
     padding-left: 34px;
   }
 
@@ -627,4 +696,29 @@ li {
     
   }*/
   /******************  END COACHING  ***************/
+
+  /***************** START HOW WORKS ****************/
+  .why-grid-container {
+    height: 500px; /*check this size later*/
+  }
+  .why-grid-container .why-grid-item-2 .why-flex-container {
+    flex-direction: row;
+    justify-content: space-around; /*doesn't work*/
+    align-items: center;
+  }
+
+  .why-grid-container .why-grid-item-2 .why-flex-container .why-flex-item-1 {
+    padding-left: 50px;
+  }
+
+  .why-grid-container .why-grid-item-2 .why-flex-container .why-flex-item-2 {
+    padding-left: 6px;
+  }
+
+  .why-grid-container .why-grid-item-2 .why-flex-container .why-flex-item-3 {
+    padding-left: 6px;
+    padding-top: 28px;
+  }
+
+  /***************** END HOW WORKS ****************/
 }
