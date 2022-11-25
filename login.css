@@ -310,21 +310,9 @@ footer {
 }
 
 .sign-grid-container .sign-grid-item #go-signup {
-  padding-left: 98px;
+  padding-left: 110px;
   font-size: 12px;
 }
-/*
-    <section class="sign-grid-container">
-      <div class="sign-grid-item sign-grid-item-1">
-        <h1 class="grid-it-1-h1">Login</h1>
-        <p class="grid-it-1-p">Welcome back!</p>
-        <p>
-          By logging into xAcademy, you agree to <br />
-          <a href="#" class="a-terms">Terms of use</a> and
-          <a href="#" class="a-terms">Privacy Policy</a>
-        </p>
-      </div>
-      */
 
 /* ------  Txt Input Fields -------*/
 .sign-grid-container .sign-grid-item .input-fields #mail-un {

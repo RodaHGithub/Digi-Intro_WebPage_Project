@@ -201,6 +201,213 @@ footer {
 
 /************* END FOOTER ****************/
 
+/*************** START SIGNUP ******************/
+.sign-grid-container {
+  display: grid;
+  grid-template-columns: 1 fr;
+  grid-auto-rows: minmax(300px, auto);
+  /*grid-column-gap: __;*/
+  grid-row-gap: 0px;
+  background-color: rgb(9, 34, 60);
+  color: rgb(40, 42, 53);
+  justify-content: center;
+  justify-items: center;
+  padding-bottom: 60px;
+  padding-top: 40px;
+  /*align-content: center;*/
+  /*  justify-items: center;*/
+}
+
+/*.sign-grid-container .sign-grid-item img {
+  max-width: 100%;
+  height: 90%; auto
+  justify-items: center;
+  padding-top: 60px;
+}*/
+
+.sign-grid-container .sign-grid-item {
+  width: 100vw;
+}
+
+/*Aligning First box*/
+.sign-grid-item-1 {
+  /*align-self: center;*/
+  /*justify-self: center;*/
+  /*margin-left: 40px;
+  margin-right: 40px;*/
+  padding-top: 60px;
+  background-color: rgb(11, 31, 51);
+  color: aliceblue;
+  padding-left: 60px;
+}
+
+.sign-grid-container .sign-grid-item-1 .grid-it-1-p a.a-terms {
+  color: aliceblue;
+  text-decoration: underline;
+}
+
+.sign-grid-container .sign-grid-item .grid-it-1-h1 {
+  padding-bottom: 20px;
+}
+
+.sign-grid-container .sign-grid-item .p-welcome {
+  padding-bottom: 20px;
+}
+
+.sign-grid-container .sign-grid-item p.grid-it-1-p {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+/*Aligning Second Box*/
+.sign-grid-item-2 {
+  /*align-self: center;*/
+  /*justify-self: center;*/
+  /*margin-left: 40px;
+  margin-right: 40px;*/
+  padding-top: 40px;
+  background-color: rgb(250, 252, 254);
+  color: aliceblue;
+  padding-left: 65px;
+  padding-bottom: 60px;
+}
+
+.sign-grid-container .sign-grid-item-2 form.button-external {
+  border: rgb(20, 13, 53);
+  padding-bottom: 5px;
+}
+
+.sign-grid-container .sign-grid-item-2 form.button-external button {
+  border-color: rgb(73, 76, 83);
+  border-width: 1px;
+  font-size: 11px;
+}
+
+.sign-grid-container .sign-grid-item p.sign-p2 {
+  color: rgb(73, 76, 83);
+  padding-top: 20px;
+  font-size: 12px;
+  padding-bottom: 12px;
+}
+
+.sign-grid-container .sign-grid-item .input-fields {
+  color: rgb(11, 31, 51);
+  font-size: 14px;
+  padding-bottom: 14px;
+  line-height: 27px;
+}
+
+.sign-grid-container .sign-grid-item .passwrd {
+  color: rgb(69, 132, 244);
+}
+
+.sign-grid-container .sign-grid-item #passwrd {
+  font-size: 12px;
+}
+
+.sign-grid-container .sign-grid-item .go-signup {
+  color: rgb(69, 132, 244);
+}
+
+.sign-grid-container .sign-grid-item #go-signup {
+  padding-left: 90px;
+  font-size: 12px;
+}
+
+.sign-grid-container .sign-grid-item .code{
+  color: rgb(69, 132, 244);
+}
+
+.sign-grid-container .sign-grid-item #code{
+  padding-top: 12px;
+    padding-left: 90px;
+  font-size: 12px;
+    padding-bottom: 12px;
+}
+
+/* ------  Txt Input Fields -------*/
+.sign-grid-container .sign-grid-item .input-fields #mail-un {
+  width: 300px;
+}
+
+.sign-grid-container .sign-grid-item .input-fields #pwd {
+  width: 300px;
+}
+/* ------ Buttons --------*/
+
+/*Role Buttons*/
+.sign-grid-container .sign-grid-item .button-role button {
+  background-color: rgb(255, 255, 255);
+  border-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  color: rgb(4,170,109);
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.sign-grid-container .sign-grid-item .button-role button a{
+color: rgb(4,170,109);
+}
+
+.sign-grid-container .sign-grid-item .button-role button:hover {
+color: white;
+background-color: rgb(4,170,109);
+ border-color: rgb(73, 76, 83);
+}
+/*External Buttons*/
+.sign-grid-container .sign-grid-item .button-external button {
+  background-color: rgb(255, 255, 255);
+  border-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  color: rgb(20, 13, 53);
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  /*width: 300px; adjust this*/
+  width: 300px;
+}
+
+.sign-grid-container .sign-grid-item .button-external button a {
+  color: white;
+}
+
+.sign-grid-container .sign-grid-item .button-external button:hover {
+  background-color: rgb(240, 241, 242);
+  border-color: rgb(73, 76, 83);
+  border-radius: 5px;
+  color: rgb(20, 13, 53);
+}
+
+/*Login button
+.sign-grid-container .sign-grid-item .button-register button {
+  background-color: rgb(11, 31, 51);
+  border-color: rgb(11, 31, 51);
+  border-radius: 5px;
+  color: white;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  width: 300px;
+}
+
+.sign-grid-container .sign-grid-item .button-register button a {
+  color: white;
+}
+
+.sign-grid-container .sign-grid-item .button-register button:hover {
+  background-color: rgb(4, 170, 109);
+  border-color: rgb(4, 170, 109);
+  border-radius: 5px;
+  color: white; */
+}
+/*************** END SIGNUP ******************/
+
 /* RWD */
 
 /* ----------------------------------------------------------------------------------------------------
@@ -320,4 +527,50 @@ footer {
   }
 
   /************ END FOOTER*****************/
+
+  /*************** START SIGNUP ******************/
+  .sign-grid-container {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    background-color: rgb(217, 238, 225);
+  }
+
+  /*.sign-grid-container .sign-grid-item img {
+    max-width: 100%;
+    height: auto;
+    justify-items: center;
+    padding-bottom: 60px;
+  }*/
+
+  .sign-grid-container .sign-grid-item {
+    width: 35vw;
+  }
+
+  /*Aligning First box*/
+  .sign-grid-item-1 {
+    /*align-self: center;*/
+    /*justify-self: center;*/
+    margin-left: 100px;
+    justify-self: end;
+    padding-top: 40px;
+    /*margin-right: 120px;*/
+    /*grid-area: 1 / 2 / span 1 / span 1; change order ->not for this doc*/
+  }
+
+  .sign-grid-container .sign-grid-item p.grid-it-1-p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  /*Aligning Second box*/
+  .sign-grid-item-2 {
+    /*align-self: center;*/
+    /*justify-self: center;*/
+    margin-right: 100px;
+    justify-self: start;
+    /*margin-right: 120px;*/
+    /*grid-area: 1 / 2 / span 1 / span 1; change order ->not for this doc*/
+  }
+  /*************** END SIGNUP ******************/
 }
