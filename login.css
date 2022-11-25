@@ -297,12 +297,20 @@ footer {
   color: rgb(69, 132, 244);
 }
 
+.sign-grid-container .sign-grid-item .passwrd:hover {
+  text-decoration: underline;
+}
+
 .sign-grid-container .sign-grid-item #passwrd {
   font-size: 12px;
 }
 
 .sign-grid-container .sign-grid-item .go-signup {
   color: rgb(69, 132, 244);
+}
+
+.sign-grid-container .sign-grid-item .go-signup:hover {
+  text-decoration: underline;
 }
 
 .sign-grid-container .sign-grid-item #go-signup {
