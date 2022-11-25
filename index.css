@@ -296,7 +296,7 @@ h1.welcome {
 /********************START GRID MAIN  *******************************/
 .courses-grid-container {
   display: grid;
-  grid-template-columns: 1 fr;
+  grid-template-columns: 1fr;
   grid-auto-rows: minmax(300px, auto);
   /*grid-column-gap: __;*/
   grid-row-gap: 0px;
