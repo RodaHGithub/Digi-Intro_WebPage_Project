@@ -240,6 +240,7 @@ h1.welcome {
 
 .welc-grid-container .welc-grid-item-1 button:hover {
   background: rgb(29, 129, 92);
+  cursor: pointer;
 }
 
 /********************END WELCOME MAIN *******************************/
@@ -390,6 +391,7 @@ h1.welcome {
   border-color: rgb(29, 129, 92);
   border-radius: 5px;
   color: white;
+  cursor: pointer;
 }
 /********************END GRID MAIN *******************************/
 

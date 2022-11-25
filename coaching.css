@@ -280,6 +280,7 @@ footer {
   border-color: rgb(4, 170, 109);
   border-radius: 5px;
   color: white;
+  cursor: pointer;
 }
 /*************** END WELCOME ********************/
 
@@ -305,10 +306,12 @@ footer {
 .coach-flex-item-1 {
   background-color: rgb(217, 238, 225);
   padding-bottom: 50px;
+  margin-bottom: 20px;
 }
 .coach-flex-item-2 {
   background-color: rgb(217, 238, 225);
   padding-bottom: 50px;
+  margin-bottom: 20px;
 }
 .coach-flex-item-3 {
   background-color: rgb(217, 238, 225);
@@ -374,6 +377,7 @@ li.li-coach {
   border-color: rgb(29, 129, 92);
   border-radius: 5px;
   color: white;
+  cursor: pointer;
 }
 /******************  END COACHING  ***************/
 
@@ -453,6 +457,7 @@ li.li-coach {
   border-color: rgb(4, 170, 109);
   border-radius: 5px;
   color: white;
+  cursor: pointer;
 }
 
 /***************** END HOW WORKS ****************/
@@ -714,6 +719,13 @@ li {
   .why-grid-container .why-grid-item-2 .why-flex-container .why-flex-item-3 {
     padding-left: 6px;
     padding-top: 28px;
+  }
+
+  .coach-flex-item-1 {
+    margin-bottom: 0px;
+  }
+  .coach-flex-item-2 {
+    margin-bottom: 0px;
   }
 
   /***************** END HOW WORKS ****************/

@@ -375,6 +375,7 @@ footer {
   color: white;
   background-color: rgb(4, 170, 109);
   border-color: rgb(4, 170, 109);
+  cursor: pointer;
 }
 /*External Buttons*/
 .sign-grid-container .sign-grid-item .button-external button {
@@ -399,6 +400,7 @@ footer {
   border-color: rgb(73, 76, 83);
   border-radius: 5px;
   color: rgb(20, 13, 53);
+  cursor: pointer;
 }
 
 /*Login button
