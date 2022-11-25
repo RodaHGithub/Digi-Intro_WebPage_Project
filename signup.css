@@ -239,6 +239,7 @@ footer {
   background-color: rgb(11, 31, 51);
   color: aliceblue;
   padding-left: 60px;
+  padding-bottom: 60px;
 }
 
 .sign-grid-container .sign-grid-item-1 .grid-it-1-p a.a-terms {
@@ -250,13 +251,18 @@ footer {
   padding-bottom: 20px;
 }
 
-.sign-grid-container .sign-grid-item .p-welcome {
-  padding-bottom: 20px;
+.sign-grid-container .sign-grid-item #p-welcome {
+  padding-bottom: 30px;
+}
+
+.sign-grid-container .sign-grid-item .p-end {
+  padding-top: 20px;
 }
 
 .sign-grid-container .sign-grid-item p.grid-it-1-p {
-  font-size: 18px;
-  line-height: 25px;
+  font-size: 16px;
+  line-height: 22px;
+  padding-bottom: 18px;
 }
 
 /*Aligning Second Box*/
@@ -270,6 +276,23 @@ footer {
   color: aliceblue;
   padding-left: 65px;
   padding-bottom: 60px;
+}
+
+.sign-grid-container .sign-grid-item-2 .form-roles {
+  color: rgb(40, 42, 53);
+  padding-bottom: 10px;
+  font-size: 15px;
+}
+
+.sign-grid-container .sign-grid-item-2 form.button-role {
+  border: rgb(20, 13, 53);
+  padding-bottom: 18px;
+}
+
+.sign-grid-container .sign-grid-item-2 form.button-role button {
+  border-color: rgb(142, 145, 155);
+  border-width: 1px;
+  font-size: 11px;
 }
 
 .sign-grid-container .sign-grid-item-2 form.button-external {
@@ -314,15 +337,15 @@ footer {
   font-size: 12px;
 }
 
-.sign-grid-container .sign-grid-item .code{
+.sign-grid-container .sign-grid-item .code {
   color: rgb(69, 132, 244);
 }
 
-.sign-grid-container .sign-grid-item #code{
+.sign-grid-container .sign-grid-item #code {
   padding-top: 12px;
-    padding-left: 90px;
+  padding-left: 90px;
   font-size: 12px;
-    padding-bottom: 12px;
+  padding-bottom: 12px;
 }
 
 /* ------  Txt Input Fields -------*/
@@ -340,21 +363,22 @@ footer {
   background-color: rgb(255, 255, 255);
   border-color: rgb(255, 255, 255);
   border-radius: 5px;
-  color: rgb(4,170,109);
+  color: rgb(4, 170, 109);
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 5px;
   padding-bottom: 5px;
+  width: 97px;
 }
 
-.sign-grid-container .sign-grid-item .button-role button a{
-color: rgb(4,170,109);
+.sign-grid-container .sign-grid-item .button-role button a {
+  color: rgb(4, 170, 109);
 }
 
 .sign-grid-container .sign-grid-item .button-role button:hover {
-color: white;
-background-color: rgb(4,170,109);
- border-color: rgb(73, 76, 83);
+  color: white;
+  background-color: rgb(4, 170, 109);
+  border-color: rgb(4, 170, 109);
 }
 /*External Buttons*/
 .sign-grid-container .sign-grid-item .button-external button {
@@ -404,8 +428,9 @@ background-color: rgb(4,170,109);
   background-color: rgb(4, 170, 109);
   border-color: rgb(4, 170, 109);
   border-radius: 5px;
-  color: white; */
-}
+  color: white;
+ } */
+
 /*************** END SIGNUP ******************/
 
 /* RWD */
@@ -571,6 +596,10 @@ background-color: rgb(4,170,109);
     justify-self: start;
     /*margin-right: 120px;*/
     /*grid-area: 1 / 2 / span 1 / span 1; change order ->not for this doc*/
+  }
+
+  .sign-grid-container .sign-grid-item-2 .form-roles {
+    font-size: 12px;
   }
   /*************** END SIGNUP ******************/
 }
