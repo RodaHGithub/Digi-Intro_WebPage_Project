@@ -200,7 +200,7 @@ footer {
 /***************** START WEBINAR ************/
 .sign-grid-container {
   display: grid;
-  grid-template-columns: 1 fr;
+  grid-template-columns: 1fr;
   grid-auto-rows: minmax(300px, auto);
   /*grid-column-gap: __;*/
   grid-row-gap: 0px;
@@ -245,7 +245,7 @@ footer {
   padding-bottom: 20px;
   font-weight: 500;
   font-size: 18px;
-  text-shadow: rgb(40, 42, 53);
+  text-shadow: black;
 }
 
 .sign-grid-container .sign-grid-item p.grid-it-1-p {
